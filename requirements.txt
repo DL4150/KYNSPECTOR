@@ -1,7 +1,7 @@
 streamlit==1.40.1
 streamlit-option-menu==0.4.0
-pandas
-transformers
-numpy
-deep-translator
-opennsfw2
+tf_keras==2.18.0
+opennsfw2==0.14.0
+transformers==4.46.2
+torch==2.5.1
+deep-translator==1.11.4
