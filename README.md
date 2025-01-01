@@ -37,108 +37,6 @@ KYNSPECTOR is a cutting-edge AI-powered content moderation platform that safegua
 </tr>
 </table>
 
-## 🔄 Content Moderation Flow
-
-```mermaid
-graph LR
-    A[User Upload] --> B{AI Analysis}
-    B -->|Safe Content| C[Publish]
-    B -->|Suspicious| D[Admin Review]
-    B -->|Violation| E[Block]
-    D -->|Approve| C
-    D -->|Reject| E
-```
-
-<div align="center">
-
-### "KYNSPECTOR KEEPING YOUR FEED CLEAN"
-
-
-</div>
-
----
-## ⚙️ KYNSPECTOR - Usage Instructions
-
-### 1. User Interaction
-
-#### **Uploading Content**
-- Users can **upload content** to the platform, including:
-  - **Text comments** on posts
-  - **Images** and **videos**
----
-
-#### **Moderation Techniques Overview**
-
-| **Moderation Technique** | **Description**                                           | **Types of Content**     | **Key Features**                                                                 |
-|---------------------------|----------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
-| **Content Analysis**      | Detects harmful or inappropriate material in uploaded content. | Text, Image, Video        | - Detects **Hate Speech**, **Nudity**, **Violence**, **Misinformation**          |
-| **Text Moderation**       | Filters uploaded text content using predefined rules, including support for multiple languages. | Text                     | - Supports **Multilingual Filtering**<br>- Specifically supports **Indian languages** |
-| **Comment Moderation**    | Flags inappropriate comments on posts for further review or immediate action. | Text                     | - Flags **Harmful or Offensive Comments**<br>- Directs flagged comments for **Admin Review** or **Automatic Action** |
-
-
----
-
-1. **User uploads content** (text, image, or video).
-2. **System processes the content** and applies moderation checks.
-
----
-
-### 2. Automated Content Flagging
-
-The system classifies content into three categories using a classification system based on **threshold probabilities**.
-
-#### **Categories Based on Confidence Score**:
-
-| **Confidence Score Range** | **Category**          | **Action**                              |
-|----------------------------|-----------------------|-----------------------------------------|
-| **0.0 to 0.2**             | Safe Content (✅)      | **Automatic Approval**                  |
-| **0.2 to 0.4**             | Needs Review (⚠️)     | **Admin Review Required**               |
-| **0.4 to 1.0**             | Violation (❌)         | **Automatic Block**                     |
-
-3. Content is **classified** into one of three categories:
-   - **Safe Content** (0.0 - 0.2): Automatically approved.
-   - **Needs Review** (0.2 - 0.4): Admin reviews and decides.
-   - **Violation** (0.4 - 1.0): Automatically blocked.
-
-```mermaid
-graph TD;
-    A[User Uploads Content] --> B[System Moderates Content];
-    B --> C{Content Classification};
-    C -->|Safe Content| D[Automatic Approval ✅];
-    C -->|Needs Review| E[Admin Review ⚠️];
-    C -->|Violation| F[Automatic Block ❌];
-```
-
----
-
-### 3. Admin Role
-
-#### **Admin Review Process**
-- **Manual Review**:
-  Admin is notified to manually review content that falls in the **0.2 to 0.4 range**.  
-  Admin decides whether the content should be:
-  - **Approved** and published  
-  - **Blocked** if it violates guidelines
-
-  **Admin** reviews flagged content in the **0.2 to 0.4 range** and takes appropriate action.
-
-```mermaid
-graph LR;
-    A[Content Flagged for Review] --> B{Admin Decision};
-    B -->|Approve| C[Content Published ✅];
-    B -->|Block| D[Content Blocked ❌];
-```
-
----
-
-### 4. Testing data
-
-- **Demo Folder**:  
-  Explicit images and videos are available in the **example_data** folder for testing content moderation and classification.
-  
-- **Secure Data Entry**:  
-  The system ensures **secure entry points** for all uploaded content and user data.
-
 
 # Installation Guide for KYNSPECTOR
 
@@ -245,7 +143,111 @@ pip install <package-name>
   ```bash
   deactivate
   ```
+---
 
+
+
+## 🔄 Content Moderation Flow
+
+```mermaid
+graph LR
+    A[User Upload] --> B{AI Analysis}
+    B -->|Safe Content| C[Publish]
+    B -->|Suspicious| D[Admin Review]
+    B -->|Violation| E[Block]
+    D -->|Approve| C
+    D -->|Reject| E
+```
+
+<div align="center">
+
+### "KYNSPECTOR KEEPING YOUR FEED CLEAN"
+
+
+</div>
+
+---
+## ⚙️ KYNSPECTOR - Usage Instructions
+
+### 1. User Interaction
+
+#### **Uploading Content**
+- Users can **upload content** to the platform, including:
+  - **Text comments** on posts
+  - **Images** and **videos**
+---
+
+#### **Moderation Techniques Overview**
+
+| **Moderation Technique** | **Description**                                           | **Types of Content**     | **Key Features**                                                                 |
+|---------------------------|----------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
+| **Content Analysis**      | Detects harmful or inappropriate material in uploaded content. | Text, Image, Video        | - Detects **Hate Speech**, **Nudity**, **Violence**, **Misinformation**          |
+| **Text Moderation**       | Filters uploaded text content using predefined rules, including support for multiple languages. | Text                     | - Supports **Multilingual Filtering**<br>- Specifically supports **Indian languages** |
+| **Comment Moderation**    | Flags inappropriate comments on posts for further review or immediate action. | Text                     | - Flags **Harmful or Offensive Comments**<br>- Directs flagged comments for **Admin Review** or **Automatic Action** |
+
+
+---
+
+1. **User uploads content** (text, image, or video).
+2. **System processes the content** and applies moderation checks.
+
+---
+
+### 2. Automated Content Flagging
+
+The system classifies content into three categories using a classification system based on **threshold probabilities**.
+
+#### **Categories Based on Confidence Score**:
+
+| **Confidence Score Range** | **Category**          | **Action**                              |
+|----------------------------|-----------------------|-----------------------------------------|
+| **0.0 to 0.2**             | Safe Content (✅)      | **Automatic Approval**                  |
+| **0.2 to 0.4**             | Needs Review (⚠️)     | **Admin Review Required**               |
+| **0.4 to 1.0**             | Violation (❌)         | **Automatic Block**                     |
+
+3. Content is **classified** into one of three categories:
+   - **Safe Content** (0.0 - 0.2): Automatically approved.
+   - **Needs Review** (0.2 - 0.4): Admin reviews and decides.
+   - **Violation** (0.4 - 1.0): Automatically blocked.
+
+```mermaid
+graph TD;
+    A[User Uploads Content] --> B[System Moderates Content];
+    B --> C{Content Classification};
+    C -->|Safe Content| D[Automatic Approval ✅];
+    C -->|Needs Review| E[Admin Review ⚠️];
+    C -->|Violation| F[Automatic Block ❌];
+```
+
+---
+
+### 3. Admin Role
+
+#### **Admin Review Process**
+- **Manual Review**:
+  Admin is notified to manually review content that falls in the **0.2 to 0.4 range**.  
+  Admin decides whether the content should be:
+  - **Approved** and published  
+  - **Blocked** if it violates guidelines
+
+  **Admin** reviews flagged content in the **0.2 to 0.4 range** and takes appropriate action.
+
+```mermaid
+graph LR;
+    A[Content Flagged for Review] --> B{Admin Decision};
+    B -->|Approve| C[Content Published ✅];
+    B -->|Block| D[Content Blocked ❌];
+```
+
+---
+
+### 4. Testing data
+
+- **Demo Folder**:  
+  Explicit images and videos are available in the **example_data** folder for testing content moderation and classification.
+  
+- **Secure Data Entry**:  
+  The system ensures **secure entry points** for all uploaded content and user data.
 
 
 ## 🔍 Content Classification
