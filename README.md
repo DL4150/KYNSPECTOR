@@ -145,39 +145,17 @@ pip install <package-name>
   ```
 ---
 
+# ⚙️ USAGE INSTRUCTIONS
 
+## 1. User Interaction
 
-## 🔄 Content Moderation Flow
-
-```mermaid
-graph LR
-    A[User Upload] --> B{AI Analysis}
-    B -->|Safe Content| C[Publish]
-    B -->|Suspicious| D[Admin Review]
-    B -->|Violation| E[Block]
-    D -->|Approve| C
-    D -->|Reject| E
-```
-
-<div align="center">
-
-### "KYNSPECTOR KEEPING YOUR FEED CLEAN"
-
-
-</div>
-
----
-## ⚙️ KYNSPECTOR - Usage Instructions
-
-### 1. User Interaction
-
-#### **Uploading Content**
+### **Uploading Content**
 - Users can **upload content** to the platform, including:
   - **Text comments** on posts
   - **Images** and **videos**
 ---
 
-#### **Moderation Techniques Overview**
+### **Moderation Techniques Overview**
 
 | **Moderation Technique** | **Description**                                           | **Types of Content**     | **Key Features**                                                                 |
 |---------------------------|----------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
@@ -193,11 +171,11 @@ graph LR
 
 ---
 
-### 2. Automated Content Flagging
+## 2. Automated Content Flagging
 
 The system classifies content into three categories using a classification system based on **threshold probabilities**.
 
-#### **Categories Based on Confidence Score**:
+### **Categories Based on Confidence Score**:
 
 | **Confidence Score Range** | **Category**          | **Action**                              |
 |----------------------------|-----------------------|-----------------------------------------|
@@ -221,9 +199,9 @@ graph TD;
 
 ---
 
-### 3. Admin Role
+## 3. Admin Role
 
-#### **Admin Review Process**
+### **Admin Review Process**
 - **Manual Review**:
   Admin is notified to manually review content that falls in the **0.2 to 0.4 range**.  
   Admin decides whether the content should be:
@@ -241,7 +219,7 @@ graph LR;
 
 ---
 
-### 4. Testing data
+## 4. Testing data
 
 - **Demo Folder**:  
   Explicit images and videos are available in the **example_data** folder for testing content moderation and classification.
@@ -251,6 +229,27 @@ graph LR;
 
 ---
 
+
+## 🔄 Content Moderation Flow
+
+```mermaid
+graph LR
+    A[User Upload] --> B{AI Analysis}
+    B -->|Safe Content| C[Publish]
+    B -->|Suspicious| D[Admin Review]
+    B -->|Violation| E[Block]
+    D -->|Approve| C
+    D -->|Reject| E
+```
+
+<div align="center">
+
+### "KYNSPECTOR KEEPING YOUR FEED CLEAN"
+
+
+</div>
+
+---
 
 ## 🔍 Content Classification
 
