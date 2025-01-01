@@ -36,7 +36,7 @@ KYNSPECTOR is a cutting-edge AI-powered content moderation platform that safegua
 </td>
 </tr>
 </table>
-
+<br>
 
 # Installation Guide for KYNSPECTOR
 
@@ -145,6 +145,8 @@ pip install <package-name>
   ```
 ---
 
+<br>
+
 # ⚙️ USAGE INSTRUCTIONS
 
 ## 1. User Interaction
@@ -228,7 +230,7 @@ graph LR;
   The system ensures **secure entry points** for all uploaded content and user data.
 
 ---
-
+<br>
 
 ## 🔄 Content Moderation Flow
 
