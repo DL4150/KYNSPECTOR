@@ -10,7 +10,12 @@ class kynspector:
         self.classifier = pipeline("sentiment-analysis", model="michellejieli/NSFW_text_classifier")
         self.translate=GoogleTranslator(source='auto', target='en')
     def video_check(self,video_path):
-        file_path = os.path.join("E:/Code/python/kyn/temp/", video_path.name)
+        user_profile = os.environ.get('USERPROFILE')
+        new_dir = os.path.join(user_profile, 'temp')
+        if not os.path.exists(new_dir):
+            os.makedirs(new_dir)
+        file_path = os.path.join(new_dir, video_path.name)
+
         with open(file_path, "wb") as f:
             f.write(video_path.getbuffer())
         elapsed_seconds, nsfw_probabilities = n2.predict_video_frames(file_path)
@@ -24,7 +29,11 @@ class kynspector:
         return {"category":category,"prob":largest_number,}
     
     def image_check(self,image_path):
-        file_path = os.path.join("E:/Code/python/kyn/temp/", image_path.name)
+        user_profile = os.environ.get('USERPROFILE')
+        new_dir = os.path.join(user_profile, 'temp')
+        if not os.path.exists(new_dir):
+            os.makedirs(new_dir)
+        file_path = os.path.join(new_dir, image_path.name)
         with open(file_path, "wb") as f:
             f.write(image_path.getbuffer())
         nsfw_probabilities = n2.predict_image(file_path)
