@@ -1,27 +1,4 @@
-<div align="center">
 
-<svg width="200" height="200" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(50, 20)">
-    <!-- Eye shape -->
-    <path d="M150 100 
-             C 200 50, 250 50, 300 100
-             C 250 150, 200 150, 150 100 Z" 
-          fill="none" stroke="#FF0000" stroke-width="20"/>
-    
-    <!-- Pupil -->
-    <circle cx="225" cy="100" r="25" fill="#FF0000"/>
-    
-    <!-- Base triangular shape -->
-    <path d="M150 120 
-             L 300 120 
-             L 225 250 Z" 
-          fill="#FF0000"/>
-    
-    <!-- Text bar -->
-    <rect x="175" y="270" width="100" height="30" fill="#FF0000"/>
-    <text x="185" y="290" fill="white" font-family="Arial" font-size="16">KYNSPECTOR</text>
-  </g>
-</svg>
 
 [![AI-Powered](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge)](https://github.com)
 [![Multilingual](https://img.shields.io/badge/Multilingual-Support-green?style=for-the-badge)](https://github.com)
