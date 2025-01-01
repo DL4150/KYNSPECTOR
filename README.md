@@ -72,7 +72,6 @@ graph LR
 | **Moderation Technique** | **Description**                                           | **Types of Content**     | **Key Features**                                                                 |
 |---------------------------|----------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
 | **Content Analysis**      | Detects harmful or inappropriate material in uploaded content. | Text, Image, Video        | - Detects **Hate Speech**, **Nudity**, **Violence**, **Misinformation**          |
-| **Deepfake Detection**    | Uses AI algorithms to detect manipulated or misleading media content. | Image, Video             | - Detects **Deepfakes**<br>- Flags **altered media content**                     |
 | **Text Moderation**       | Filters uploaded text content using predefined rules, including support for multiple languages. | Text                     | - Supports **Multilingual Filtering**<br>- Specifically supports **Indian languages** |
 | **Comment Moderation**    | Flags inappropriate comments on posts for further review or immediate action. | Text                     | - Flags **Harmful or Offensive Comments**<br>- Directs flagged comments for **Admin Review** or **Automatic Action** |
 
@@ -139,6 +138,114 @@ graph LR;
   
 - **Secure Data Entry**:  
   The system ensures **secure entry points** for all uploaded content and user data.
+
+
+# Installation Guide for Content Moderation System
+
+This guide will help you set up and run the Content Moderation System locally using Streamlit.
+
+---
+
+## Prerequisites
+
+Before starting, ensure you have the following installed on your system:
+
+- Python 3.8 or higher
+- Git
+- pip (Python package manager)
+- Virtual environment tool (e.g., `venv` or `virtualenv`) - optional but recommended
+
+---
+
+## Step 1: Clone the Repository
+
+Open your terminal or command prompt and run the following command to clone the repository:
+
+```bash
+gh repo clone DL4150/KYNSPECTOR
+```
+
+
+---
+
+## Step 2: Navigate to the Project Directory
+
+```bash
+cd KYNSPECTOR
+```
+
+
+---
+
+## Step 3: Create and Activate a Virtual Environment (Optional but Recommended)
+
+### On Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### On macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## Step 4: Install Dependencies
+
+Use the following command to install all required Python packages from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Step 5: Run the Application
+
+Run the Streamlit app using the following command:
+
+```bash
+streamlit run admin.py
+```
+
+This will start a local web server, and you can access the application in your browser at `http://localhost:8501`.
+
+---
+
+## Step 6: Testing the System
+
+1. Add test data to the `example_data` folder provided in the repository.
+2. Interact with the system by uploading content (text, images, or videos) and observe the moderation results.
+
+---
+
+## Troubleshooting
+
+- If you encounter permission issues during installation, try running the commands with `sudo` (Linux/macOS) or as an administrator (Windows).
+- Ensure your Python version is 3.8 or higher by running:
+
+```bash
+python --version
+```
+
+- If any package fails to install, check the error message and try installing the package manually using:
+
+```bash
+pip install <package-name>
+```
+
+---
+
+## Additional Notes
+
+- Make sure to deactivate the virtual environment when you're done working by running:
+  ```bash
+  deactivate
+  ```
+
 
 
 ## 🔍 Content Classification
