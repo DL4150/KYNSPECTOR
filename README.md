@@ -149,6 +149,102 @@ pip install <package-name>
 
 # ⚙️ USAGE INSTRUCTIONS
 
+This manual provides comprehensive instructions for using the KYNSPECTOR content moderation system.
+
+---
+
+## Overview
+
+KYNSPECTOR is designed to support three types of users, each with distinct roles and functionalities:
+
+- **Admin**: Responsible for moderating mildly inappropriate content and fine-tuning the model. 
+- **User 1**: A 12-year-old user.
+- **User 2**: A 22-year-old user.
+
+All users can interact with the platform through the sidebar and other features accessible from the homepage.
+
+---
+
+## Sidebar Features
+
+The sidebar in KYNSPECTOR provides access to the following user profiles:
+
+### 1. **Admin**
+- **Role**: Moderator
+- **Capabilities**:
+  - Review and moderate mildly inappropriate content flagged by the system.
+  - Monitor the **Log** of flagged content and ongoing moderation requests.
+  - Fine-tune the model by approving or rejecting flagged content based on appropriateness.
+
+### 2. **User 1**
+- **Role**: General User (12 years old)
+- **Capabilities**:
+  - View posts and make comments on the homepage.
+  - Upload videos and photos through the **post** button.
+  - Interact with content while adhering to community guidelines.
+
+### 3. **User 2**
+- **Role**: General User (22 years old)
+- **Capabilities**:
+  - Same as User 1 (view, comment, and upload).
+
+---
+
+## Homepage Features
+
+The homepage provides a simple and interactive interface for users to engage with the platform:
+
+1. **Commenting**:
+   - Users can leave comments on posts displayed on the homepage.
+   - Comments are subject to real-time moderation to filter inappropriate language or content.
+
+2. **Uploading Content**:
+   - Users can upload images and videos using the **Upload** button.
+   - The uploaded content is automatically analyzed for appropriateness before being displayed.
+
+---
+
+## Admin-Specific Features
+
+The admin user has additional privileges for managing content and moderating flagged items:
+
+1. **Monitoring Log**:
+   - View all flagged content, including the confidence scores and moderation outcomes.
+
+2. **Ongoing Requests**:
+   - Access a live feed of moderation requests that require manual review.
+   - Take actions such as approving or rejecting flagged content to fine-tune the system's AI model.
+
+3. **Fine-Tuning**:
+   - Provide input to help improve the AI's moderation accuracy by correcting false positives or negatives.
+
+---
+
+## User Actions Summary
+
+| **Action**            | **User 1 & User 2**                  | **Admin**                                  |
+|-----------------------|--------------------------------------|--------------------------------------------|
+| Comment on posts      | ✅                                    | ✅                                          |
+| Upload images/videos  | ✅                                    | ✅                                          |
+| Moderate content      | ❌                                    | ✅                                          |
+| View monitoring logs  | ❌                                    | ✅                                          |
+| Respond to requests   | ❌                                    | ✅                                          |
+
+---
+
+## Best Practices
+
+- **For Users**:
+  - Ensure uploaded content adheres to platform guidelines to avoid unnecessary flagging.
+  - Engage respectfully in comments to maintain a positive community atmosphere.
+
+- **For Admins**:
+  - Regularly review flagged content to improve the AI's learning process.
+  - Use the monitoring log effectively to identify trends in flagged items.
+
+---
+
+
 ## 1. User Interaction
 
 ### **Uploading Content**
