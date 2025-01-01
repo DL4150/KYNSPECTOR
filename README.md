@@ -51,9 +51,8 @@ graph LR
 
 <div align="center">
 
-### "Building Trust Through Intelligent Content Protection"
+### "KYNSPECTOR KEEPING YOUR FEED CLEAN"
 
-[Get Started →](https://github.com) • [Documentation](https://github.com) • [API Reference](https://github.com)
 
 </div>
 
