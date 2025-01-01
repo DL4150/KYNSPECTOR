@@ -2,79 +2,6 @@
   <img src="Logo.png" alt="KYNSPECTOR">
 </p>
 
-[![AI-Powered](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge)](https://github.com)
-[![Multilingual](https://img.shields.io/badge/Multilingual-Support-green?style=for-the-badge)](https://github.com)
-[![Real-Time](https://img.shields.io/badge/Real--Time-Moderation-orange?style=for-the-badge)](https://github.com)
-
-<h3>🛡️ Intelligent Content Moderation for Safe Digital Communities</h3>
-
-</div>
-
-## Transform Your Community's Content Security
-
-KYNSPECTOR is an AI-powered content moderation platform that safeguards your digital space through intelligent, real-time content analysis. Our system automatically screens text, images, and videos, ensuring your community remains safe, authentic, and engaging.
-
-### 🎯 Key Capabilities
-
-<table>
-<tr>
-<td width="33%" align="center">
-    <h3>🤖</h3>
-    <b>Smart Detection</b><br>
-    AI-driven analysis across text, images, and videos
-</td>
-<td width="33%" align="center">
-    <h3>🔍</h3>
-    <b>DeepFake Shield</b><br>
-    Advanced manipulation detection
-</td>
-<td width="33%" align="center">
-    <h3>🌐</h3>
-    <b>Multilingual</b><br>
-    Support for Indian regional languages
-</td>
-</tr>
-</table>
-
-### 🚀 Core Features
-
-- **Intelligent Content Screening**
-  - Real-time moderation across all content types
-  - Automated detection of inappropriate content
-  - Sophisticated deepfake identification
-
-- **User Engagement**
-  - Progressive point-based leveling system
-  - Category-specific content management
-  - Smart comment moderation
-
-- **Cultural Intelligence**
-  - Multilingual text filtering
-  - Context-aware analysis
-  - Regional language support
-
-### 💡 How It Works
-
-```mermaid
-graph LR
-    A[User Upload] --> B[AI Analysis]
-    B --> C{Content Check}
-    C -->|Safe| D[Publish]
-    C -->|Unsafe| E[Block]
-    C -->|Review| F[Admin Queue]
-```
-
-<div align="center">
-
-### "Building Trust Through Intelligent Content Protection"
-
-[Get Started →](https://github.com) • [Documentation](https://github.com) • [API Reference](https://github.com)
-
-</div>
-
----
-
-
 <div align="center">
 
 ```
@@ -131,7 +58,15 @@ graph LR
     D -->|Reject| E
 ```
 
+<div align="center">
 
+### "Building Trust Through Intelligent Content Protection"
+
+[Get Started →](https://github.com) • [Documentation](https://github.com) • [API Reference](https://github.com)
+
+</div>
+
+---
 
 ## 🔍 Content Classification
 
