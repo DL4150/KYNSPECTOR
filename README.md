@@ -140,7 +140,7 @@ graph LR;
   The system ensures **secure entry points** for all uploaded content and user data.
 
 
-# Installation Guide for Content Moderation System
+# Installation Guide for KYNSPECTOR
 
 This guide will help you set up and run the Content Moderation System locally using Streamlit.
 
