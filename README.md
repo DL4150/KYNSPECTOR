@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="Logo.png" alt="KYNSPECTOR">
+</p>
 
 [![AI-Powered](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge)](https://github.com)
 [![Multilingual](https://img.shields.io/badge/Multilingual-Support-green?style=for-the-badge)](https://github.com)
