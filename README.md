@@ -249,6 +249,8 @@ graph LR;
 - **Secure Data Entry**:  
   The system ensures **secure entry points** for all uploaded content and user data.
 
+---
+
 
 ## 🔍 Content Classification
 
