@@ -4,15 +4,6 @@
 
 <div align="center">
 
-```
-██╗  ██╗██╗   ██╗███╗   ██╗███████╗██████╗ ███████╗ ██████╗████████╗ ██████╗ ██████╗ 
-██║ ██╔╝╚██╗ ██╔╝████╗  ██║██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
-█████╔╝  ╚████╔╝ ██╔██╗ ██║███████╗██████╔╝█████╗  ██║        ██║   ██║   ██║██████╔╝
-██╔═██╗   ╚██╔╝  ██║╚██╗██║╚════██║██╔═══╝ ██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
-██║  ██╗   ██║   ██║ ╚████║███████║██║     ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
-╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝╚══════╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
-```
-
 [![AI-Powered](https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge)](https://github.com)
 [![Real-Time](https://img.shields.io/badge/Real--Time-Protection-green?style=for-the-badge)](https://github.com)
 [![Multilingual](https://img.shields.io/badge/Multilingual-Support-orange?style=for-the-badge)](https://github.com)
