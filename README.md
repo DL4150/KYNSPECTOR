@@ -57,6 +57,88 @@ graph LR
 </div>
 
 ---
+## ⚙️ KYNSPECTOR - Usage Instructions
+
+### 1. User Interaction
+
+#### **Uploading Content**
+- Users can **upload content** to the platform, including:
+  - **Text comments** on posts
+  - **Images** and **videos**
+---
+
+#### **System Moderation**
+
+| **Moderation Factor**    | **Description**                                                                 |
+|--------------------------|---------------------------------------------------------------------------------|
+| **Content Analysis**     | Detects harmful or inappropriate material such as hate speech, nudity, violence, and misinformation. |
+| **Deepfake Detection**   | Identifies manipulated or misleading media using AI-driven deepfake analysis tools. |
+| **Text Moderation**      | Automatically filters text based on predefined rules, including a **multilingual text filter** that supports **Indian languages**. |
+| **Comment Moderation**   | Flags inappropriate or harmful comments for review or automatic action.        |
+
+---
+
+1. **User uploads content** (text, image, or video).
+2. **System processes the content** and applies moderation checks.
+
+---
+
+### 2. Automated Content Flagging
+
+The system classifies content into three categories using a classification system based on **threshold probabilities**.
+
+#### **Categories Based on Confidence Score**:
+
+| **Confidence Score Range** | **Category**          | **Action**                              |
+|----------------------------|-----------------------|-----------------------------------------|
+| **0.0 to 0.2**             | Safe Content (✅)      | **Automatic Approval**                  |
+| **0.2 to 0.4**             | Needs Review (⚠️)     | **Admin Review Required**               |
+| **0.4 to 1.0**             | Violation (❌)         | **Automatic Block**                     |
+
+3. Content is **classified** into one of three categories:
+   - **Safe Content** (0.0 - 0.2): Automatically approved.
+   - **Needs Review** (0.2 - 0.4): Admin reviews and decides.
+   - **Violation** (0.4 - 1.0): Automatically blocked.
+
+```mermaid
+graph TD;
+    A[User Uploads Content] --> B[System Moderates Content];
+    B --> C{Content Classification};
+    C -->|Safe Content| D[Automatic Approval ✅];
+    C -->|Needs Review| E[Admin Review ⚠️];
+    C -->|Violation| F[Automatic Block ❌];
+```
+
+---
+
+### 3. Admin Role
+
+#### **Admin Review Process**
+- **Manual Review**:
+  Admin is notified to manually review content that falls in the **0.2 to 0.4 range**.  
+  Admin decides whether the content should be:
+  - **Approved** and published  
+  - **Blocked** if it violates guidelines
+
+  **Admin** reviews flagged content in the **0.2 to 0.4 range** and takes appropriate action.
+
+```mermaid
+graph LR;
+    A[Content Flagged for Review] --> B{Admin Decision};
+    B -->|Approve| C[Content Published ✅];
+    B -->|Block| D[Content Blocked ❌];
+```
+
+---
+
+### 4. Testing data
+
+- **Demo Folder**:  
+  Explicit images and videos are available in the **example_data** folder for testing content moderation and classification.
+  
+- **Secure Data Entry**:  
+  The system ensures **secure entry points** for all uploaded content and user data.
+
 
 ## 🔍 Content Classification
 
