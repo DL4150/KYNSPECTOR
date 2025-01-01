@@ -2,11 +2,9 @@
 
 KYNSPECTOR is an intelligent content moderation platform that safeguards online communities through automated detection and management of user-generated content. Our system leverages advanced AI to process text, images, and videos, ensuring a safe and engaging environment for all users.
 
-## 🎯 Core Features
+## Features
 
 - **Multi-Format Content Analysis**: Comprehensive moderation for text, images, and videos
-- **Advanced Deepfake Detection**: State-of-the-art algorithms to identify manipulated media
-- **Intelligent User Recognition**: Point-based system rewarding positive community participation
 - **Multilingual Support**: Native processing of Indian regional languages
 - **Real-Time Comment Filtering**: Instant moderation of user interactions
 - **Transparent Monitoring**: Complete audit trail of moderation decisions
@@ -70,12 +68,12 @@ graph TD
    - Automatic approval for compliant content
    - Positive impact on user point system
 
-2. **Likely Inappropriate Content (⚠️)**
+2. **Mildly Inappropriate Content (⚠️)**
    - Queued for admin review in "Need Action" queue
    - Multiple resolution options available
    - Used for system learning and improvement
 
-3. **Very Likely Inappropriate Content (❌)**
+3. **Inappropriate Content (❌)**
    - Automatic blocking
    - Logged for audit purposes
    - Zero tolerance for severe violations
