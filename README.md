@@ -67,14 +67,15 @@ graph LR
   - **Images** and **videos**
 ---
 
-#### **System Moderation**
+#### **Moderation Techniques Overview**
 
-| **Moderation Factor**    | **Description**                                                                 |
-|--------------------------|---------------------------------------------------------------------------------|
-| **Content Analysis**     | Detects harmful or inappropriate material such as hate speech, nudity, violence, and misinformation. |
-| **Deepfake Detection**   | Identifies manipulated or misleading media using AI-driven deepfake analysis tools. |
-| **Text Moderation**      | Automatically filters text based on predefined rules, including a **multilingual text filter** that supports **Indian languages**. |
-| **Comment Moderation**   | Flags inappropriate or harmful comments for review or automatic action.        |
+| **Moderation Technique** | **Description**                                           | **Types of Content**     | **Key Features**                                                                 |
+|---------------------------|----------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
+| **Content Analysis**      | Detects harmful or inappropriate material in uploaded content. | Text, Image, Video        | - Detects **Hate Speech**, **Nudity**, **Violence**, **Misinformation**          |
+| **Deepfake Detection**    | Uses AI algorithms to detect manipulated or misleading media content. | Image, Video             | - Detects **Deepfakes**<br>- Flags **altered media content**                     |
+| **Text Moderation**       | Filters uploaded text content using predefined rules, including support for multiple languages. | Text                     | - Supports **Multilingual Filtering**<br>- Specifically supports **Indian languages** |
+| **Comment Moderation**    | Flags inappropriate comments on posts for further review or immediate action. | Text                     | - Flags **Harmful or Offensive Comments**<br>- Directs flagged comments for **Admin Review** or **Automatic Action** |
+
 
 ---
 
