@@ -60,7 +60,11 @@ graph LR
 
 ## 🔍 Content Classification
 
-The system uses advanced AI to classify content into three categories:
+<p align="center">
+  <img src="Images/Classifier.png" alt="KYNSPECTOR">
+</p>
+
+The system classifies content into three categories based on the first and second threshold probabilities. The demo utilizes two threshold values for `n` and `m`, set at **0.2** and **0.4**, respectively.
 
 ```
 Confidence Score
