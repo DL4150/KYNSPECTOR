@@ -245,31 +245,8 @@ The admin user has additional privileges for managing content and moderating fla
 ---
 
 
-## 1. User Interaction
 
-### **Uploading Content**
-- Users can **upload content** to the platform, including:
-  - **Text comments** on posts
-  - **Images** and **videos**
----
-
-### **Moderation Techniques Overview**
-
-| **Moderation Technique** | **Description**                                           | **Types of Content**     | **Key Features**                                                                 |
-|---------------------------|----------------------------------------------------------|---------------------------|----------------------------------------------------------------------------------|
-| **Content Analysis**      | Detects harmful or inappropriate material in uploaded content. | Text, Image, Video        | - Detects **Hate Speech**, **Nudity**, **Violence**, **Misinformation**          |
-| **Text Moderation**       | Filters uploaded text content using predefined rules, including support for multiple languages. | Text                     | - Supports **Multilingual Filtering**<br>- Specifically supports **Indian languages** |
-| **Comment Moderation**    | Flags inappropriate comments on posts for further review or immediate action. | Text                     | - Flags **Harmful or Offensive Comments**<br>- Directs flagged comments for **Admin Review** or **Automatic Action** |
-
-
----
-
-1. **User uploads content** (text, image, or video).
-2. **System processes the content** and applies moderation checks.
-
----
-
-## 2. Automated Content Flagging
+## Automated Content Flagging
 
 The system classifies content into three categories using a classification system based on **threshold probabilities**.
 
@@ -297,7 +274,7 @@ graph TD;
 
 ---
 
-## 3. Admin Role
+## Admin Role
 
 ### **Admin Review Process**
 - **Manual Review**:
@@ -317,7 +294,7 @@ graph LR;
 
 ---
 
-## 4. Testing data
+## Testing data
 
 - **Demo Folder**:  
   Explicit images and videos are available in the **example_data** folder for testing content moderation and classification.
